@@ -131,6 +131,7 @@ async function pushEventsFromSuitable({
                 startsOn: new Date(suitableEvent.startDate).toISOString(),
                 endsOn: new Date(suitableEvent.endDate).toISOString(),
                 address: {
+                    name: suitableEvent.location || "Suitable",
                     onlineLocation: `${suitableBaseUrl}/institution/${suitableInstitutionId}/activities/${suitableEvent.id}`,
                     instructions: "To obtain credit for this event, log into Suitable",
                 },
