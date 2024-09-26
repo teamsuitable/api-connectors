@@ -34,3 +34,24 @@ Once the environment has been set up you can invoke the script via:
 ```bash
 npm start
 ```
+
+##### Example execution using Powershell
+
+```ps1
+# Set the environment variables
+$env:SUITABLE_USERNAME = "<MY_SUITABLE_USERNAME>"
+$env:SUITABLE_PASSWORD = "<MY_SUITABLE_LOCAL_PASS>"
+$env:SUITABLE_PATHWAY_ID = "<MY_SUITABLE_PATHWAY_ID>"
+$env:SUITABLE_INSTITUTION_ID = "<MY_SUITABLE_INSTITUTION_ID>"
+$env:SUITABLE_BASE_URL = "https://app.suitable.co"
+$env:SUITABLE_DATE_CREATED_DAYS_AGO_OR_LESS = "1"
+$env:ENGAGE_API_KEY = "<MY_ENGAGE_API_KEY>"
+$env:ENGAGE_SUBMITTED_BY_ORGANIZATION_ID = "<MY_ENGAGE_ORGANIZATION_ID>"
+$env:ENGAGE_SUBMITTED_BY_ID_CAMPUS_EMAIL = "<MY_ENGAGE_CAMPUS_EMAIL>"
+
+# Navigate to the project directory (if needed)
+# Set-Location -Path "C:\path\to\your\project"
+
+# Run the Node.js script
+node src/index.js
+```
